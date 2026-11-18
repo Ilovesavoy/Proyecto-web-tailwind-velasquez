@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth scroll-pt-20 motion-reduce:scroll-auto">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Una galería de frases memorables de personajes históricos, anime y animación.">
+    <meta name="author" content="José Velásquez">
+    <title>Palabras que perduran | Galería de frases</title>
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        ink: "#1d2738",
+                        muted: "#647084",
+                        paper: "#fffdf9",
+                        soft: "#f5f2ec",
+                        line: "#e9e4dc",
+                        navy: "#182333",
+                        accent: {
+                            DEFAULT: "#e8795b",
+                            dark: "#bf5138",
+                            light: "#f1a187"
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Segoe UI"', "system-ui", "-apple-system", "BlinkMacSystemFont", "sans-serif"]
+                    }
+                }
+            }
+        };
+    </script>
+</head>
+<body class="bg-paper font-sans text-ink antialiased">
+    <nav class="sticky top-0 z-50 bg-navy" aria-label="Navegación principal">
+        <div class="mx-auto w-full max-w-6xl px-4 sm:px-6 flex flex-wrap items-center justify-between py-3">
+            <a class="text-xl font-bold tracking-tighter text-white" href="#">Palabras<span class="text-accent-light"> que perduran</span></a>
+            <button id="boton-menu" type="button" class="rounded border border-white/30 p-2 text-white lg:hidden" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú de navegación">
+                <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+            </button>
+            <div class="hidden basis-full lg:flex lg:basis-auto" id="menuPrincipal">
+                <ul class="flex w-full flex-col gap-1 py-3 lg:w-auto lg:flex-row lg:items-center lg:gap-2 lg:py-0">
+                    <li><a class="block rounded px-2 py-2 text-[0.94rem] text-white/80 hover:text-white focus-visible:text-white" href="#historicos">Históricos</a></li>
+                    <li><a class="block rounded px-2 py-2 text-[0.94rem] text-white/80 hover:text-white focus-visible:text-white" href="#anime">Anime</a></li>
+                    <li><a class="block rounded px-2 py-2 text-[0.94rem] text-white/80 hover:text-white focus-visible:text-white" href="#animados">Animados</a></li>
+                    <li><a class="block rounded px-2 py-2 text-[0.94rem] text-white/80 hover:text-white focus-visible:text-white" href="#juegos">Juegos</a></li>
+                    <li><a class="block rounded px-2 py-2 text-[0.94rem] text-white/80 hover:text-white focus-visible:text-white" href="#resumen">Resumen</a></li>
+                    <li><a class="block rounded px-2 py-2 text-[0.94rem] text-white/80 hover:text-white focus-visible:text-white" href="#contactanos">Contacto</a></li>
+                    <li><a class="block rounded-full bg-accent px-4 py-2 text-[0.94rem] text-center text-white transition duration-150 hover:bg-accent-dark focus-visible:bg-accent-dark lg:ml-1" href="#sugerencias">Comparte una frase</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="overflow-hidden bg-[image:radial-gradient(ellipse_at_86%_20%,rgba(232,121,91,0.17),transparent_34%),linear-gradient(125deg,#f8f3eb_0%,#fffdf9_68%)]">
+        <div class="mx-auto w-full max-w-6xl px-4 sm:px-6">
+            <div class="grid items-center gap-8 sm:min-h-[31rem] lg:grid-cols-12">
+                <div class="py-12 lg:col-span-8 xl:col-span-7">
+                    <span class="inline-block text-xs font-bold uppercase tracking-[0.14em] text-accent-dark">Ideas que dejan huella</span>
+                    <h1 class="mt-3 max-w-[13ch] text-[clamp(3rem,16vw,4.5rem)] font-bold leading-[0.98] tracking-[-0.065em] text-ink sm:text-[clamp(3.5rem,7vw,5.5rem)]">Palabras que <span class="text-accent-dark">perduran</span></h1>
+                    <p class="mb-6 mt-3 max-w-xl text-[clamp(1.05rem,2vw,1.2rem)] leading-[1.7] text-muted">Frases para recordar, personajes que inspiran y pensamientos que siguen vivos mucho después de ser dichos.</p>
+                    <a class="inline-block rounded-full bg-accent px-6 py-3 text-lg font-semibold text-white transition duration-150 hover:-translate-y-0.5 hover:bg-accent-dark focus-visible:-translate-y-0.5 focus-visible:bg-accent-dark motion-reduce:transition-none" href="#historicos">Explorar la galería <span aria-hidden="true">↓</span></a>
+                </div>
+                <div class="hidden justify-center lg:col-span-4 lg:flex xl:col-span-5">
+                    <div class="flex h-[22rem] w-[22rem] items-center justify-center rounded-full border border-accent-dark/15 bg-accent/10 pt-20 font-serif text-[18rem] leading-none text-accent-dark" aria-hidden="true">“</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="mx-auto w-full max-w-6xl px-4 sm:px-6 py-12" id="historicos">
+            <div class="mb-8 max-w-[43rem]">
+                <span class="inline-block text-xs font-bold uppercase tracking-[0.14em] text-accent-dark">Experiencia y pensamiento</span>
+                <h2 class="my-[0.45rem] text-[clamp(1.85rem,4vw,2.6rem)] font-bold tracking-[-0.045em]">Personajes históricos</h2>
+                <p class="text-muted">Voces que transformaron la forma de entender el mundo.</p>
+            </div>
+            <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                <article>
+                    <div class="flex h-full flex-col overflow-hidden rounded-2xl border border-ink/5 bg-white shadow-[0_0.5rem_1.7rem_rgba(29,39,56,0.055)] transition duration-200 hover:-translate-y-1 hover:shadow-[0_1rem_2.5rem_rgba(29,39,56,0.12)] motion-reduce:transition-none">
+                        <img src="img/einstein.jpg" class="h-48 w-full bg-[#ece8e1] object-cover sm:h-56" alt="Retrato de Albert Einstein" loading="lazy">
+                        <div class="p-6">
+                            <span class="mb-2 block text-[0.72rem] font-bold uppercase tracking-[0.1em] text-accent-dark">Ciencia</span>
+                            <h3 class="text-xl font-bold tracking-[-0.02em]">Albert Einstein</h3>
+                            <p class="mt-2 leading-[1.72] text-[#4c5869]">“Hay dos maneras de vivir la vida: una es como si nada fuera un milagro; la otra es como si todo fuera un milagro.”</p>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <div class="flex h-full flex-col overflow-hidden rounded-2xl border border-ink/5 bg-white shadow-[0_0.5rem_1.7rem_rgba(29,39,56,0.055)] transition duration-200 hover:-translate-y-1 hover:shadow-[0_1rem_2.5rem_rgba(29,39,56,0.12)] motion-reduce:transition-none">
+                        <img src="img/socrates.jpg" class="h-48 w-full bg-[#ece8e1] object-cover sm:h-56" alt="Retrato del filósofo Sócrates" loading="lazy">
+                        <div class="p-6">
+                            <span class="mb-2 block text-[0.72rem] font-bold uppercase tracking-[0.1em] text-accent-dark">Filosofía</span>
+                            <h3 class="text-xl font-bold tracking-[-0.02em]">Sócrates</h3>
+                            <p class="mt-2 leading-[1.72] text-[#4c5869]">“La verdadera sabiduría está en reconocer la propia ignorancia.”</p>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <div class="flex h-full flex-col overflow-hidden rounded-2xl border border-ink/5 bg-white shadow-[0_0.5rem_1.7rem_rgba(29,39,56,0.055)] transition duration-200 hover:-translate-y-1 hover:shadow-[0_1rem_2.5rem_rgba(29,39,56,0.12)] motion-reduce:transition-none">
+                        <img src="img/nizar.jpg" class="h-48 w-full bg-[#ece8e1] object-cover sm:h-56" alt="Fotografía del poeta Nizar Qabbani" loading="lazy">
+                        <div class="p-6">
+                            <span class="mb-2 block text-[0.72rem] font-bold uppercase tracking-[0.1em] text-accent-dark">Poesía</span>
+                            <h3 class="text-xl font-bold tracking-[-0.02em]">Nizar Qabbani</h3>
+                            <p class="mt-2 leading-[1.72] text-[#4c5869]">“En mis sueños eres mía... en la realidad diré que eres mi sueño.”</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="bg-soft py-12" id="anime">
+            <div class="mx-auto w-full max-w-6xl px-4 sm:px-6">
+                <div class="mb-8 max-w-[43rem]">
+                    <span class="inline-block text-xs font-bold uppercase tracking-[0.14em] text-accent-dark">Determinación y crecimiento</span>
+                    <h2 class="my-[0.45rem] text-[clamp(1.85rem,4vw,2.6rem)] font-bold tracking-[-0.045em]">Personajes de anime</h2>
+                    <p class="text-muted">Historias de esfuerzo, amistad y transformación.</p>
+                </div>
+                <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                    <article>
+                        <div class="flex h-full flex-col overflow-hidden rounded-2xl border border-ink/5 bg-white shadow-[0_0.5rem_1.7rem_rgba(29,39,56,0.055)] transition duration-200 hover:-translate-y-1 hover:shadow-[0_1rem_2.5rem_rgba(29,39,56,0.12)] motion-reduce:transition-none">
+                            <img src="img/asta.png" class="h-48 w-full bg-[#ece8e1] object-cover sm:h-56" alt="Asta, protagonista de Black Clover" loading="lazy">
+                            <div class="p-6">
+                                <span class="mb-2 block text-[0.72rem] font-bold uppercase tracking-[0.1em] text-accent-dark">Black Clover</span>
+                                <h3 class="text-xl font-bold tracking-[-0.02em]">Asta</h3>
+                                <p class="mt-2 leading-[1.72] text-[#4c5869]">“¡No me subestimes, destino! ¡Voy a lograrlo! No me importa si me tardo uno, diez o cien años. Me esforzaré todo lo que pueda hasta conseguir mi objetivo. Voy a ser el Rey Mago y demostraré que, aunque seas pobre o huérfano, todo el mundo puede llegar a ser alguien increíble.”</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="flex h-full flex-col overflow-hidden rounded-2xl border border-ink/5 bg-white shadow-[0_0.5rem_1.7rem_rgba(29,39,56,0.055)] transition duration-200 hover:-translate-y-1 hover:shadow-[0_1rem_2.5rem_rgba(29,39,56,0.12)] motion-reduce:transition-none">
+                            <img src="img/thorfinn.png" class="h-48 w-full bg-[#ece8e1] object-cover sm:h-56" alt="Thorfinn, protagonista de Vinland Saga" loading="lazy">
+                            <div class="p-6">
+                                <span class="mb-2 block text-[0.72rem] font-bold uppercase tracking-[0.1em] text-accent-dark">Vinland Saga</span>
+                                <h3 class="text-xl font-bold tracking-[-0.02em]">Thorfinn</h3>
+                                <p class="mt-2 leading-[1.72] text-[#4c5869]">“¿Tú crees que la gente puede cambiar? ¿Qué se necesita para hacerlo?”</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="flex h-full flex-col overflow-hidden rounded-2xl border border-ink/5 bg-white shadow-[0_0.5rem_1.7rem_rgba(29,39,56,0.055)] transition duration-200 hover:-translate-y-1 hover:shadow-[0_1rem_2.5rem_rgba(29,39,56,0.12)] motion-reduce:transition-none">
+                            <img src="img/kakashi.png" class="h-48 w-full bg-[#ece8e1] object-cover sm:h-56" alt="Kakashi Hatake, personaje de Naruto" loading="lazy">
+                            <div class="p-6">
+                                <span class="mb-2 block text-[0.72rem] font-bold uppercase tracking-[0.1em] text-accent-dark">Naruto</span>
+                                <h3 class="text-xl font-bold tracking-[-0.02em]">Kakashi Hatake</h3>
+                                <p class="mt-2 leading-[1.72] text-[#4c5869]">“Un ninja debe ver a través de la decepción. En el mundo ninja, aquellos que rompen las reglas son escoria; es cierto. Pero quienes abandonan a un amigo son peor que la escoria.”</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="mx-auto w-full max-w-6xl px-4 sm:px-6 py-12" id="animados">
+            <div class="mb-8 max-w-[43rem]">
+                <span class="inline-block text-xs font-bold uppercase tracking-[0.14em] text-accent-dark">Lecciones para todos</span>
+                <h2 class="my-[0.45rem] text-[clamp(1.85rem,4vw,2.6rem)] font-bold tracking-[-0.045em]">Personajes animados</h2>
+                <p class="text-muted">Grandes verdades también vienen en historias animadas.</p>
+            </div>
+            <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                <article>
+                    <div class="flex h-full flex-col overflow-hidden rounded-2xl border border-ink/5 bg-white shadow-[0_0.5rem_1.7rem_rgba(29,39,56,0.055)] transition duration-200 hover:-translate-y-1 hover:shadow-[0_1rem_2.5rem_rgba(29,39,56,0.12)] motion-reduce:transition-none">
+                        <img src="img/jake.png" class="h-48 w-full bg-[#ece8e1] object-cover sm:h-56" alt="Jake el Perro, de Hora de aventura" loading="lazy">
+                        <div class="p-6">
+                            <span class="mb-2 block text-[0.72rem] font-bold uppercase tracking-[0.1em] text-accent-dark">Hora de aventura</span>
+                            <h3 class="text-xl font-bold tracking-[-0.02em]">Jake el Perro</h3>
+                            <p class="mt-2 leading-[1.72] text-[#4c5869]">“Ser malo en algo es el primer paso para ser bueno en eso.”</p>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <div class="flex h-full flex-col overflow-hidden rounded-2xl border border-ink/5 bg-white shadow-[0_0.5rem_1.7rem_rgba(29,39,56,0.055)] transition duration-200 hover:-translate-y-1 hover:shadow-[0_1rem_2.5rem_rgba(29,39,56,0.12)] motion-reduce:transition-none">
+                        <img src="img/batman.png" class="h-48 w-full bg-[#ece8e1] object-cover sm:h-56" alt="Batman, el caballero de la noche" loading="lazy">
+                        <div class="p-6">
+                            <span class="mb-2 block text-[0.72rem] font-bold uppercase tracking-[0.1em] text-accent-dark">DC Comics</span>
+                            <h3 class="text-xl font-bold tracking-[-0.02em]">Batman</h3>
+                            <p class="mt-2 leading-[1.72] text-[#4c5869]">“No es lo que soy por dentro, sino lo que hago lo que me define.”</p>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <div class="flex h-full flex-col overflow-hidden rounded-2xl border border-ink/5 bg-white shadow-[0_0.5rem_1.7rem_rgba(29,39,56,0.055)] transition duration-200 hover:-translate-y-1 hover:shadow-[0_1rem_2.5rem_rgba(29,39,56,0.12)] motion-reduce:transition-none">
+                        <img src="img/spiderman.jpg" class="h-48 w-full bg-[#ece8e1] object-cover sm:h-56" alt="Spider-Man, el hombre araña" loading="lazy">
+                        <div class="p-6">
+                            <span class="mb-2 block text-[0.72rem] font-bold uppercase tracking-[0.1em] text-accent-dark">Marvel</span>
+                            <h3 class="text-xl font-bold tracking-[-0.02em]">Spider-Man</h3>
+                            <p class="mt-2 leading-[1.72] text-[#4c5869]">“No importa lo fuerte que seas. Todos necesitamos ayuda a veces.”</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="bg-soft py-12" id="juegos">
+            <div class="mx-auto w-full max-w-6xl px-4 sm:px-6">
+                <div class="mb-8 max-w-[43rem]">
+                    <span class="inline-block text-xs font-bold uppercase tracking-[0.14em] text-accent-dark">Estrategia y aventura</span>
+                    <h2 class="my-[0.45rem] text-[clamp(1.85rem,4vw,2.6rem)] font-bold tracking-[-0.045em]">Personajes de videojuegos</h2>
+                    <p class="text-muted">Frases que motivan a seguir adelante en mundos virtuales.</p>
+                </div>
+                <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                    <article>
+                        <div class="flex h-full flex-col overflow-hidden rounded-2xl border border-ink/5 bg-white shadow-[0_0.5rem_1.7rem_rgba(29,39,56,0.055)] transition duration-200 hover:-translate-y-1 hover:shadow-[0_1rem_2.5rem_rgba(29,39,56,0.12)] motion-reduce:transition-none">
+                            <img src="img/geralt.jpg" class="h-48 w-full bg-[#ece8e1] object-cover sm:h-56" alt="Geralt de Rivia, de The Witcher" loading="lazy">
+                            <div class="p-6">
+                                <span class="mb-2 block text-[0.72rem] font-bold uppercase tracking-[0.1em] text-accent-dark">The Witcher</span>
+                                <h3 class="text-xl font-bold tracking-[-0.02em]">Geralt de Rivia</h3>
+                                <p class="mt-2 leading-[1.72] text-[#4c5869]">“Eres lo que haces, no lo que dices.”</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="flex h-full flex-col overflow-hidden rounded-2xl border border-ink/5 bg-white shadow-[0_0.5rem_1.7rem_rgba(29,39,56,0.055)] transition duration-200 hover:-translate-y-1 hover:shadow-[0_1rem_2.5rem_rgba(29,39,56,0.12)] motion-reduce:transition-none">
+                            <img src="img/zelda.jpg" class="h-48 w-full bg-[#ece8e1] object-cover sm:h-56" alt="Ilustración de Link, héroe de The Legend of Zelda" loading="lazy">
+                            <div class="p-6">
+                                <span class="mb-2 block text-[0.72rem] font-bold uppercase tracking-[0.1em] text-accent-dark">The Legend of Zelda</span>
+                                <h3 class="text-xl font-bold tracking-[-0.02em]">Anciano de la cueva</h3>
+                                <p class="mt-2 leading-[1.72] text-[#4c5869]">“¡Es peligroso ir solo! Toma esto.”</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="flex h-full flex-col overflow-hidden rounded-2xl border border-ink/5 bg-white shadow-[0_0.5rem_1.7rem_rgba(29,39,56,0.055)] transition duration-200 hover:-translate-y-1 hover:shadow-[0_1rem_2.5rem_rgba(29,39,56,0.12)] motion-reduce:transition-none">
+                            <img src="img/lara.jpg" class="h-48 w-full bg-[#ece8e1] object-cover sm:h-56" alt="Lara Croft, de Tomb Raider" loading="lazy">
+                            <div class="p-6">
+                                <span class="mb-2 block text-[0.72rem] font-bold uppercase tracking-[0.1em] text-accent-dark">Tomb Raider</span>
+                                <h3 class="text-xl font-bold tracking-[-0.02em]">Lara Croft</h3>
+                                <p class="mt-2 leading-[1.72] text-[#4c5869]">“El pasado no define quién eres, sino cómo eliges enfrentarlo.”</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-[#f6f1e9] py-12" id="sugerencias">
+            <div class="mx-auto w-full max-w-6xl px-4 sm:px-6">
+                <div class="mx-auto max-w-3xl">
+                    <div class="mb-8 max-w-[43rem] mx-auto text-center">
+                        <span class="inline-block text-xs font-bold uppercase tracking-[0.14em] text-accent-dark">Tu voz también cuenta</span>
+                        <h2 class="my-[0.45rem] text-[clamp(1.85rem,4vw,2.6rem)] font-bold tracking-[-0.045em]">Comparte una frase</h2>
+                        <p class="text-muted">¿Hay una frase que te inspira? Añádela a tu colección personal.</p>
+                    </div>
+                    <div class="rounded-[1.25rem] border border-ink/5 bg-white p-[clamp(1.25rem,4vw,2.5rem)] shadow-[0_1rem_3rem_rgba(29,39,56,0.08)]">
+                        <form id="formulario-sugerencias" class="grid gap-4 md:grid-cols-2">
+                            <div>
+                                <label for="personaje" class="mb-1 block text-[0.92rem] font-semibold">Nombre del personaje</label>
+                                <input type="text" class="w-full rounded-[0.7rem] border border-[#dedbd4] bg-white px-4 py-3 text-lg focus:border-accent focus:outline-none focus:ring-[0.22rem] focus:ring-accent/20" id="personaje" name="personaje" placeholder="Ej. Marie Curie" required>
+                            </div>
+                            <div>
+                                <label for="categoria" class="mb-1 block text-[0.92rem] font-semibold">Categoría</label>
+                                <select class="w-full rounded-[0.7rem] border border-[#dedbd4] bg-white px-4 py-3 text-lg focus:border-accent focus:outline-none focus:ring-[0.22rem] focus:ring-accent/20" id="categoria" name="categoria" required>
+                                    <option value="" disabled selected>Selecciona una categoría</option>
+                                    <option value="historico">Histórico</option>
+                                    <option value="anime">Anime</option>
+                                    <option value="animados">Animados</option>
+                                    <option value="juegos">Videojuegos</option>
+                                </select>
+                            </div>
+                            <div class="md:col-span-2">
+                                <label for="frase" class="mb-1 block text-[0.92rem] font-semibold">La frase</label>
+                                <textarea class="w-full rounded-[0.7rem] border border-[#dedbd4] bg-white px-4 py-3 text-lg focus:border-accent focus:outline-none focus:ring-[0.22rem] focus:ring-accent/20" id="frase" name="frase" rows="4" placeholder="Escribe aquí la frase que quieres recordar..." required></textarea>
+                            </div>
+                            <div class="flex flex-col gap-3 sm:flex-row sm:items-center md:col-span-2">
+                                <button type="submit" class="rounded-full bg-accent px-6 py-2.5 font-semibold text-white transition duration-150 hover:-translate-y-0.5 hover:bg-accent-dark focus-visible:-translate-y-0.5 focus-visible:bg-accent-dark motion-reduce:transition-none">Guardar frase</button>
+                                <span id="estado-sugerencias" class="text-sm" role="status" aria-live="polite"></span>
+                            </div>
+                        </form>
+                        <div class="mt-6 border-t border-line pt-6">
+                            <h3 class="mb-3 text-xl font-semibold">Tu colección en este navegador</h3>
+                            <ul id="lista-sugerencias"></ul>
+                            <p id="sin-sugerencias" class="text-muted">Todavía no has guardado frases.</p>
+                            <p class="mt-4 text-[0.82rem] text-muted">Las frases se guardan solo en este navegador y no se envían a ningún servidor.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mx-auto w-full max-w-6xl px-4 sm:px-6 py-12" id="resumen">
+            <div class="mb-8 max-w-[43rem]">
+                <span class="inline-block text-xs font-bold uppercase tracking-[0.14em] text-accent-dark">Una mirada rápida</span>
+                <h2 class="my-[0.45rem] text-[clamp(1.85rem,4vw,2.6rem)] font-bold tracking-[-0.045em]">Resumen de personajes</h2>
+                <p class="text-muted">Algunas de las ideas y temas presentes en esta galería.</p>
+            </div>
+            <div class="overflow-x-auto rounded-[0.9rem] border border-line">
+                <table class="w-full text-left">
+                    <thead>
+                        <tr>
+                            <th scope="col" class="bg-soft px-4 py-3 text-[0.82rem] font-semibold uppercase tracking-[0.04em] text-ink">Personaje</th>
+                            <th scope="col" class="bg-soft px-4 py-3 text-[0.82rem] font-semibold uppercase tracking-[0.04em] text-ink">Categoría</th>
+                            <th scope="col" class="bg-soft px-4 py-3 text-[0.82rem] font-semibold uppercase tracking-[0.04em] text-ink">Tema</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-t border-line hover:bg-soft/60"><td class="px-4 py-3">Albert Einstein</td><td class="px-4 py-3">Histórico</td><td class="px-4 py-3">Imaginación</td></tr>
+                        <tr class="border-t border-line hover:bg-soft/60"><td class="px-4 py-3">Asta</td><td class="px-4 py-3">Anime</td><td class="px-4 py-3">Perseverancia</td></tr>
+                        <tr class="border-t border-line hover:bg-soft/60"><td class="px-4 py-3">Batman</td><td class="px-4 py-3">Animado</td><td class="px-4 py-3">Identidad</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="mt-8 grid gap-8 md:grid-cols-2">
+                <div>
+                    <h3 class="mb-3 text-xl font-semibold">Explora por categoría</h3>
+                    <ul class="flex flex-wrap gap-2">
+                        <li><a class="inline-block rounded-full border border-line bg-soft px-[0.85rem] py-[0.45rem] text-[0.9rem] text-ink no-underline transition duration-150 hover:border-[#e8b3a5] hover:bg-[#f9e6df] hover:text-accent-dark focus-visible:border-[#e8b3a5] focus-visible:bg-[#f9e6df] focus-visible:text-accent-dark motion-reduce:transition-none" href="#historicos">Históricos</a></li>
+                        <li><a class="inline-block rounded-full border border-line bg-soft px-[0.85rem] py-[0.45rem] text-[0.9rem] text-ink no-underline transition duration-150 hover:border-[#e8b3a5] hover:bg-[#f9e6df] hover:text-accent-dark focus-visible:border-[#e8b3a5] focus-visible:bg-[#f9e6df] focus-visible:text-accent-dark motion-reduce:transition-none" href="#anime">Anime</a></li>
+                        <li><a class="inline-block rounded-full border border-line bg-soft px-[0.85rem] py-[0.45rem] text-[0.9rem] text-ink no-underline transition duration-150 hover:border-[#e8b3a5] hover:bg-[#f9e6df] hover:text-accent-dark focus-visible:border-[#e8b3a5] focus-visible:bg-[#f9e6df] focus-visible:text-accent-dark motion-reduce:transition-none" href="#animados">Animados</a></li>
+                        <li><a class="inline-block rounded-full border border-line bg-soft px-[0.85rem] py-[0.45rem] text-[0.9rem] text-ink no-underline transition duration-150 hover:border-[#e8b3a5] hover:bg-[#f9e6df] hover:text-accent-dark focus-visible:border-[#e8b3a5] focus-visible:bg-[#f9e6df] focus-visible:text-accent-dark motion-reduce:transition-none" href="#juegos">Videojuegos</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="mb-3 text-xl font-semibold">Cómo usar el sitio</h3>
+                    <ol class="list-decimal pl-5 text-muted">
+                        <li>Elige una categoría en el menú.</li>
+                        <li>Mira la imagen del personaje y lee su frase.</li>
+                        <li>Guarda las frases que quieras recordar.</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-navy text-white/70" id="contactanos">
+        <div class="mx-auto w-full max-w-6xl px-4 sm:px-6 flex flex-col gap-3 py-6 sm:flex-row sm:items-center sm:justify-between">
+            <p>&copy; 2026 Palabras que perduran <span class="px-1 text-accent-light">·</span> José Velásquez - IUTIRLA</p>
+            <a class="font-semibold text-accent-light no-underline hover:text-white focus-visible:text-white" href="mailto:Jose989pro@gmail.com">Enviar correo <span aria-hidden="true">↗</span></a>
+        </div>
+    </footer>
+
+    <script>
+        const botonMenu = document.querySelector("#boton-menu");
+        const menuPrincipal = document.querySelector("#menuPrincipal");
+
+        function cerrarMenu() {
+            menuPrincipal.classList.add("hidden");
+            botonMenu.setAttribute("aria-expanded", "false");
+        }
+
+        botonMenu.addEventListener("click", () => {
+            const estaOculto = menuPrincipal.classList.toggle("hidden");
+            botonMenu.setAttribute("aria-expanded", String(!estaOculto));
+        });
+
+        menuPrincipal.addEventListener("click", (evento) => {
+            if (evento.target.closest("a")) {
+                cerrarMenu();
+            }
+        });
+
+        const formulario = document.querySelector("#formulario-sugerencias");
+        const estadoSugerencias = document.querySelector("#estado-sugerencias");
+        const listaSugerencias = document.querySelector("#lista-sugerencias");
+        const mensajeSinSugerencias = document.querySelector("#sin-sugerencias");
+        const claveSugerencias = "palabras-que-perduran-sugerencias";
+        const nombresCategorias = {
+            historico: "Histórico",
+            anime: "Anime",
+            animados: "Animados",
+            juegos: "Videojuegos"
+        };
+
+        function mostrarSugerencias(sugerencias) {
+            listaSugerencias.replaceChildren();
+
+            sugerencias.forEach((sugerencia) => {
+                const elemento = document.createElement("li");
+                elemento.className = "border-b border-line py-3 leading-[1.65] last:border-b-0";
+                elemento.textContent = `${sugerencia.personaje} · ${nombresCategorias[sugerencia.categoria]}: ${sugerencia.frase}`;
+                listaSugerencias.append(elemento);
+            });
+
+            mensajeSinSugerencias.classList.toggle("hidden", sugerencias.length > 0);
+        }
+
+        function leerSugerencias() {
+            const guardadas = localStorage.getItem(claveSugerencias);
+            const sugerencias = guardadas ? JSON.parse(guardadas) : [];
+
+            if (!Array.isArray(sugerencias) || sugerencias.some((sugerencia) =>
+                !sugerencia ||
+                typeof sugerencia.personaje !== "string" ||
+                !Object.hasOwn(nombresCategorias, sugerencia.categoria) ||
+                typeof sugerencia.frase !== "string"
+            )) {
+                throw new Error("Los datos guardados tienen un formato inválido.");
+            }
+
+            return sugerencias;
+        }
+
+        try {
+            mostrarSugerencias(leerSugerencias());
+        } catch (error) {
+            estadoSugerencias.textContent = `No se pudieron cargar las frases guardadas: ${error.message}`;
+            estadoSugerencias.classList.add("text-red-600");
+        }
+
+        formulario.addEventListener("submit", (evento) => {
+            evento.preventDefault();
+
+            const datos = new FormData(formulario);
+            const sugerencia = {
+                personaje: datos.get("personaje").trim(),
+                categoria: datos.get("categoria"),
+                frase: datos.get("frase").trim()
+            };
+
+            if (!sugerencia.personaje || !sugerencia.frase) {
+                estadoSugerencias.textContent = "Escribe el nombre del personaje y la frase.";
+                estadoSugerencias.classList.add("text-red-600");
+                return;
+            }
+
+            try {
+                const sugerencias = leerSugerencias();
+                sugerencias.push(sugerencia);
+                localStorage.setItem(claveSugerencias, JSON.stringify(sugerencias));
+                mostrarSugerencias(sugerencias);
+                formulario.reset();
+                estadoSugerencias.textContent = "Frase guardada en tu colección.";
+                estadoSugerencias.classList.remove("text-red-600");
+            } catch (error) {
+                estadoSugerencias.textContent = `No se pudo guardar la frase: ${error.message}`;
+                estadoSugerencias.classList.add("text-red-600");
+            }
+        });
+    </script>
+</body>
+</html>
